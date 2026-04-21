@@ -174,8 +174,6 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 
 # ポートフォリオ
 
-## ポートフォリオサイト
-
 https://caisolution.github.io/portfolio/
 
 ---
