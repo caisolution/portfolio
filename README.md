@@ -178,32 +178,15 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 
 https://caisolution.github.io/portfolio/
 
-## PHP タイムカードデモ ※ 準備中
-
-素のPHP + Ajax + MVC構成で作成した業務システムサンプル
-
-機能
-
-* 打刻登録
-* 一覧表示
-* Ajax非同期通信
-* MVC構成
-
-デモ
-https://caisolutions.shop/timecard/
-
-ソースコード
-https://github.com/caisolution/portfolio
-
 ---
 
 # 設計書サンプル ※ 準備中
 
 以下の設計資料を公開しています
 
-* ER図
-* テーブル定義書
-* 画面仕様書
+* 設計書１
+* 設計書２
+* 設計書３
 
 docs フォルダ参照
 
