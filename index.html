@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>CAI Solusions - Portfolio</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/modal.js"></script>
 
+<head>
+	<meta charset="UTF-8">
+	<title>CAI Solusions - Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/modal.js"></script>
 </head>
 
 <body>
 
-<header>
-<div class="container header-flex">
-	<img src="img/cais_logo.jpg" class="logo">
-<div>
-<h1>CAI Solutions / Masato Saiki</h1>
-<p>業務システム開発、フルスタックエンジニア（実務経験20年）</p>
-</div>
+	<header>
+		<div class="container header-flex">
+			<img src="img/cais_logo.jpg" class="logo">
+			<div>
+				<h1>CAI Solutions / Masato Saiki</h1>
+				<p>業務システム開発、フルスタックエンジニア（実務経験20年）</p>
+			</div>
+		</div>
+	</header>
 
-</div>
-</header>
+	<div class="container">
 
-<div class="container">
+		<h2>職務サマリ</h2>
+		<div class="card">
+			業務システム開発、開発系社内SEを中心に20年以上の経験。<br>
+			VB.NET ＋ SQL Server / Oracle を用いた業務アプリケーション開発を得意としています。<br>
+			業務アプリケーションに関しては上流から開発、保守まで一貫して対応可能です。<br><br>
 
-<h2>職務サマリ</h2>
-<div class="card">
-業務システム開発、開発系社内SEを中心に20年以上の経験。<br>
-VB.NET ＋ SQL Server / Oracle を用いた業務アプリケーション開発を得意としています。<br>
-業務アプリケーションに関しては上流から開発、保守まで一貫して対応可能です。<br><br>
+			WEBアプリケーションは、Java、ASP.NET、PHP の経験があり、<br>
+			直近では PHP ＋ MySQL でタイムカードや顧客情報検索のシステムを開発。
+		</div>
 
-WEBアプリケーションは、Java、ASP.NET、PHP の経験があり、<br>
-直近では PHP ＋ MySQL でタイムカードや顧客情報検索のシステムを開発。<br><br>
+		<h2>稼働状況</h2>
+		<div class="card">
+			稼働状況：活動準備中<br>
+			次回稼働可能時期：2026年6月～<br>
+			勤務形態：フルリモート希望<br>
+			出社対応：初日・打ち合わせ等スポット対応可
+		</div>
 
-現在フリーランスとして活動準備中（2026年6月開業予定）<br>
-フルリモート案件を中心に対応可能です。
-</div>
+		<h2>スキル</h2>
+		<div class="card">
+			<span class="skill">VB.NET</span>
+			<span class="skill">Java</span>
+			<span class="skill">PHP</span>
+			<span class="skill">SQL Server</span>
+			<span class="skill">Oracle</span>
+			<span class="skill">MySQL</span>
+			<span class="skill">JavaScript</span>
+			<span class="skill">Ajax</span>
+			<span class="skill">HTML/CSS</span>
+			<span class="skill">Windows Forms</span>
+			<span class="skill">業務システム設計</span>
+		</div>
 
-<h2>スキル</h2>
-<div class="card">
-<span class="skill">VB.NET</span>
-<span class="skill">Java</span>
-<span class="skill">PHP</span>
-<span class="skill">SQL Server</span>
-<span class="skill">Oracle</span>
-<span class="skill">MySQL</span>
-<span class="skill">JavaScript</span>
-<span class="skill">Ajax</span>
-<span class="skill">HTML/CSS</span>
-<span class="skill">Windows Forms</span>
-<span class="skill">業務システム設計</span>
-</div>
+		<h2>設計書サンプル</h2>
+		<div class="card">
+			<button class="doc-button" onclick="openModal('docs/SystemConfig.jpg')">
+				システム構成図
+			</button>
+			<button class="doc-button" onclick="openModal('docs/Flowchart.jpg')">
+				処理フロー
+			</button>
+			<button class="doc-button" onclick="openModal('docs/TableLayout.jpg')">
+				テーブルレイアウト
+			</button>
+		</div>
 
+		<h2>対応可能業務</h2>
+		<div class="card">
+			・業務システム開発<br>
+			・既存システム改修<br>
+			・Windows業務ツール作成<br>
+			・データベース設計<br>
+			・ストアドプロシージャ開発<br>
+			・バックエンド開発<br>
+			・フロントエンド開発<br>
+			・フルリモート案件対応可
+		</div>
 
-<h2>設計書サンプル</h2>
-<div class="card">
+	</div>
 
-<button class="doc-button" onclick="openModal('docs/SystemConfig.jpg')">
-システム構成図
-</button>
-
-<button class="doc-button" onclick="openModal('docs/Flowchart.jpg')">
-処理フロー
-</button>
-
-<button class="doc-button" onclick="openModal('docs/TableLayout.jpg')">
-テーブルレイアウト
-</button>
-
-</div>
-
-
-<h2>対応可能業務</h2>
-<div class="card">
-・業務システム開発<br>
-・既存システム改修<br>
-・Windows業務ツール作成<br>
-・データベース設計<br>
-・ストアドプロシージャ開発<br>
-・バックエンド開発<br>
-・フロントエンド開発<br>
-・フルリモート案件対応可
-</div>
-
-</div>
-
-<div id="modal" class="modal" onclick="backgroundClick(event)">
-    <span class="modal-close" onclick="closeModal()">×</span>
-
-    <span class="modal-prev" onclick="prevImage()">❮</span>
-    <span class="modal-next" onclick="nextImage()">❯</span>
-
-    <img id="modalImg" class="modal-content">
-
-    <div class="modal-controls">
-        <button onclick="zoomIn()">拡大</button>
-        <button onclick="zoomOut()">縮小</button>
-    </div>
-</div>
+	<!-- 設計書サンプル用モーダル -->
+	<div id="modal" class="modal" onclick="backgroundClick(event)">
+		<span class="modal-close" onclick="closeModal()">×</span>
+		<span class="modal-prev" onclick="prevImage()">❮</span>
+		<span class="modal-next" onclick="nextImage()">❯</span>
+		<img id="modalImg" class="modal-content">
+		<div class="modal-controls">
+			<button onclick="zoomIn()">拡大</button>
+			<button onclick="zoomOut()">縮小</button>
+		</div>
+	</div>
 
 </body>
 </html>
