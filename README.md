@@ -97,7 +97,7 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 ## 歯科医師向け会員登録/物件管理システム
 
 担当工程：DB設計 / フロントエンド開発 / 保守<br>
-技術：PHP / MySQL / JavaScript<br>
+技術：PHP / CodeIgniter / MySQL / JavaScript<br>
 内容：<br>
 
 * 会員登録フォーム(Validation制御)
@@ -109,7 +109,7 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 ## 勤怠管理システム
 
 担当工程：設計 / バックエンド開発 / フロントエンド開発 / 保守<br>
-技術：PHP / MySQL / JavaScript<br>
+技術：PHP / CodeIgniter / MySQL / JavaScript<br>
 内容：<br>
 
 * タイムカード打刻(Ajax通信)
