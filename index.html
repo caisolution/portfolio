@@ -239,7 +239,7 @@ WEBアプリケーションは、Java、ASP.NET、PHP の経験があり、<br>
 
 </div>
 
-<div id="modal" class="modal">
+<div id="modal" class="modal" onclick="backgroundClick(event)">
     <span class="modal-close" onclick="closeModal()">×</span>
 
     <span class="modal-prev" onclick="prevImage()">❮</span>
@@ -345,6 +345,11 @@ function handleSwipe() {
         nextImage();
     } else {
         prevImage();
+    }
+}
+function backgroundClick(e) {
+    if (e.target.id === "modal") {
+        closeModal();
     }
 }
 </script>
