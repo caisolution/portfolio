@@ -80,6 +80,15 @@ a.button:hover {
     border-radius: 6px;
 }
 
+.link-button {
+    background: none;
+    border: none;
+    color: #2563eb;
+    cursor: pointer;
+    padding: 0;
+    font-size: 16px;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -152,17 +161,17 @@ WEBアプリケーションは、Java、ASP.NET、PHP の経験があり、<br>
 <h2>設計書サンプル</h2>
 <div class="card">
 
-<a href="#" onclick="openModal('docs/SystemConfig.jpg')">
+<button class="link-button" onclick="openModal('docs/SystemConfig.jpg')">
 システム構成図
-</a><br><br>
+</button><br><br>
 
-<a href="#" onclick="openModal('docs/Flowchart.jpg')">
+<button class="link-button" onclick="openModal('docs/Flowchart.jpg')">
 処理フロー
-</a><br><br>
+</button><br><br>
 
-<a href="#" onclick="openModal('docs/TableLayout.jpg')">
+<button class="link-button" onclick="openModal('docs/TableLayout.jpg')">
 テーブルレイアウト
-</a>
+</button>
 
 </div>
 
