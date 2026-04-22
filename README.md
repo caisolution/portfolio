@@ -178,15 +178,16 @@ https://caisolution.github.io/portfolio/
 
 ---
 
-# 設計書サンプル ※ 準備中
+# 設計書サンプル
 
-以下の設計資料を公開しています
+## システム構成図
+[![SystemConfig](docs/SystemConfig.jpg)](docs/SystemConfig.jpg)
 
-* 設計書１
-* 設計書２
-* 設計書３
+## 処理フロー
+[![Flowchart](docs/Flowchart.jpg)](docs/Flowchart.jpg)
 
-docs フォルダ参照
+## テーブルレイアウト
+[![TableLayout](docs/TableLayout.jpg)](docs/TableLayout.jpg)
 
 ---
 
