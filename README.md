@@ -54,12 +54,12 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 * SQL Server
 * Oracle
 * MySQL
-* Access
 
 ### その他
 
 * Excel
 * Word
+* Access
 * Salesforce
 * Notion
 * CodeIgniter
