@@ -1,5 +1,11 @@
 # CAI Solusions / Masato Saiki - Portfolio
 
+# ポートフォリオ
+
+https://caisolution.github.io/portfolio/
+
+---
+
 ## 稼働状況
 
 - 稼働状況：活動準備中  
@@ -175,12 +181,6 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 * 保険プランの料率計算
 * 料率辞書マスタの作成
 * テスト自動化(QuickTestPro)
-
----
-
-# ポートフォリオ
-
-https://caisolution.github.io/portfolio/
 
 ---
 
