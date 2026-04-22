@@ -180,6 +180,11 @@ https://caisolution.github.io/portfolio/
 
 # 設計書サンプル
 
+Excel版（全設計書まとめ）  
+👉 [DesignDocumentSample.xlsx](docs/DesignDocumentSample.xlsx)
+
+---
+
 ## システム構成図
 [![SystemConfig](docs/SystemConfig.jpg)](docs/SystemConfig.jpg)
 
