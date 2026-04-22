@@ -108,19 +108,53 @@ a.button:hover {
     display: none;
     position: fixed;
     z-index: 999;
-    padding-top: 40px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.85);
 }
 
 .modal-content {
     display: block;
     margin: auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
+    transition: transform 0.2s;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-prev,
+.modal-next {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.modal-prev { left: 20px; }
+.modal-next { right: 20px; }
+
+.modal-controls {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-controls button {
+    padding: 8px 12px;
+    margin: 0 5px;
 }
 
 </style>
@@ -205,17 +239,68 @@ WEBアプリケーションは、Java、ASP.NET、PHP の経験があり、<br>
 
 </div>
 
-<div id="modal" class="modal" onclick="closeModal()">
+<div id="modal" class="modal">
+    <span class="modal-close" onclick="closeModal()">×</span>
+
+    <span class="modal-prev" onclick="prevImage()">❮</span>
+    <span class="modal-next" onclick="nextImage()">❯</span>
+
     <img id="modalImg" class="modal-content">
+
+    <div class="modal-controls">
+        <button onclick="zoomIn()">拡大</button>
+        <button onclick="zoomOut()">縮小</button>
+    </div>
 </div>
+
 <script>
+const images = [
+    "docs/SystemConfig.jpg",
+    "docs/Flowchart.jpg",
+    "docs/TableLayout.jpg"
+];
+
+let currentIndex = 0;
+let zoom = 1;
+
 function openModal(src) {
+    currentIndex = images.indexOf(src);
     document.getElementById("modal").style.display = "block";
-    document.getElementById("modalImg").src = src;
+    showImage();
 }
 
 function closeModal() {
     document.getElementById("modal").style.display = "none";
+    zoom = 1;
+}
+
+function showImage() {
+    const img = document.getElementById("modalImg");
+    img.src = images[currentIndex];
+    img.style.transform = `scale(${zoom})`;
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    zoom = 1;
+    showImage();
+}
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    zoom = 1;
+    showImage();
+}
+
+function zoomIn() {
+    zoom += 0.2;
+    showImage();
+}
+
+function zoomOut() {
+    zoom -= 0.2;
+    if (zoom < 0.5) zoom = 0.5;
+    showImage();
 }
 </script>
 
