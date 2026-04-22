@@ -80,6 +80,25 @@ a.button:hover {
     border-radius: 6px;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
 </style>
 
 </head>
@@ -130,17 +149,23 @@ WEBアプリケーションは、Java、ASP.NET、PHP の経験があり、<br>
 </div>
 
 
-<h2>設計書サンプル ※ 準備中</h2>
+<h2>設計書サンプル</h2>
 <div class="card">
-・設計書１<br>
-・設計書２<br>
-・設計書３<br>
 
-<a class="button" href="https://github.com/caisolution/portfolio/tree/main/docs" target="_blank">
-設計書を見る
+<a href="#" onclick="openModal('docs/SystemConfig.jpg')">
+システム構成図
+</a><br><br>
+
+<a href="#" onclick="openModal('docs/Flowchart.jpg')">
+処理フロー
+</a><br><br>
+
+<a href="#" onclick="openModal('docs/TableLayout.jpg')">
+テーブルレイアウト
 </a>
 
 </div>
+
 
 <h2>対応可能業務</h2>
 <div class="card">
@@ -155,6 +180,20 @@ WEBアプリケーションは、Java、ASP.NET、PHP の経験があり、<br>
 </div>
 
 </div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <img id="modalImg" class="modal-content">
+</div>
+<script>
+function openModal(src) {
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("modalImg").src = src;
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
