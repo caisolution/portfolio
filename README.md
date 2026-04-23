@@ -1,4 +1,4 @@
-# CAI Solusions / Masato Saiki - Portfolio
+# CAI Solusions - Portfolio
 
 ## ポートフォリオ
 
