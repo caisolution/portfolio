@@ -212,4 +212,4 @@ Excel版（全設計書まとめ）
 
 # 連絡先
 
-Mail:cai.solutions.biz@gmail.com
+Mail：cai.solutions.biz@gmail.com
