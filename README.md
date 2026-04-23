@@ -57,9 +57,6 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 
 ### その他
 
-* Excel
-* Word
-* Access
 * Salesforce
 * Notion
 * CodeIgniter
