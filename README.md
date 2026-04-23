@@ -40,10 +40,10 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 
 * VB.NET
 * VB
-* VBA
 * Java
 * ASP.NET
 * PHP
+* CodeIgniter
 * JavaScript
 * jQuery
 * HTML
@@ -59,7 +59,6 @@ VB.NET、Java、PHP など多岐にわたる言語やフレームワークを習
 
 * Salesforce
 * Notion
-* CodeIgniter
 
 ---
 
